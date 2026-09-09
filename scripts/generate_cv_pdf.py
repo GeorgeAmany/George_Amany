@@ -40,6 +40,7 @@ PROJECT_LINKS = {
     ],
     "Binge": [
         ("Google Play", "https://play.google.com/store/apps/details?id=com.jigsaw.binge&hl=ar"),
+        ("App Store", "https://apps.apple.com/eg/app/binge-%D8%A8%D9%86%D8%AC/id6450887409"),
     ],
     "Al Wefaq Foods": [
         ("Google Play", "https://play.google.com/store/apps/details?id=com.alwefaqfoods.app"),
@@ -274,7 +275,7 @@ def main():
         ("Taleem (Student & Employees)", "Islamic education — REST API, Quran SQLite, GitHub Actions CI", None),
         ("Schupply", "School supplies e-commerce", "Schupply"),
         ("Zahran (Mobile & Desktop POS)", "E-commerce & POS — offline sync, PDF printing", None),
-        ("Binge", "Food subscription — Firebase Analytics, Amazon Payment Services", "Binge"),
+        ("Binge", "Food subscription — Firebase Analytics, Amazon Payment Services — Google Play &amp; App Store", "Binge"),
         ("Al Wefaq Foods", "Food brand mobile app", "Al Wefaq Foods"),
         ("Horse Time", "On-demand booking — chat, maps, multi-gateway payments", "Horse Time"),
         ("Al Rassi", "Industrial / manufacturing production app", "Al Rassi"),

@@ -34,7 +34,7 @@ Fuse | Influencer Marketing | Flutter, Cubit, Injectable, Freezed, Dio, Firebase
 Taleem Student & Employees | Islamic Education | Flutter, BLoC, Dio, Hive, SQLite, Firebase, GitHub Actions CI | Mobile Apps
 Schupply | School Supplies E-Commerce | Flutter, BLoC, Dio, Hive, GoRouter, Firebase | Google Play
 Zahran Mobile & Desktop POS | E-Commerce & POS | Flutter, BLoC, Dio, Hive, PDF, Window Manager | Mobile & Desktop
-Binge | Food Subscription | Flutter, BLoC, Dio, Firebase Analytics, Amazon Payment Services | Production App
+Binge | Food Subscription | Flutter, BLoC, Dio, Firebase Analytics, Amazon Payment Services | Google Play, App Store
 Al Wefaq Foods | Food Brand | Flutter, WebView, Firebase, OneSignal | Google Play
 Proposal Desktop | Business Proposals | Flutter Desktop, BLoC, PDF, Printing | Desktop App
 Horse Time | On-Demand Services | Flutter, MobX, Firebase, Multi-Gateway Payments | Mobile App

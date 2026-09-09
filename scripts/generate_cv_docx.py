@@ -29,6 +29,7 @@ PROJECT_LINKS = {
     ],
     "Binge": [
         ("Google Play", "https://play.google.com/store/apps/details?id=com.jigsaw.binge&hl=ar"),
+        ("App Store", "https://apps.apple.com/eg/app/binge-%D8%A8%D9%86%D8%AC/id6450887409"),
     ],
     "Al Wefaq Foods": [
         ("Google Play", "https://play.google.com/store/apps/details?id=com.alwefaqfoods.app"),
