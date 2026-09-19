@@ -35,6 +35,10 @@ PROJECT_LINKS = {
         ("Google Play", "https://play.google.com/store/apps/details?id=com.softera.noor_academy"),
         ("App Store", "https://apps.apple.com/eg/app/noor-institute/id6463731504"),
     ],
+    "Taleem": [
+        ("Student — App Store", "https://apps.apple.com/eg/app/taleem-student/id6809735602"),
+        ("Staff — App Store", "https://apps.apple.com/eg/app/taleem-staff/id6809736018"),
+    ],
     "Schupply": [
         ("Google Play", "https://play.google.com/store/apps/details?id=com.schupply.app"),
     ],
@@ -272,7 +276,7 @@ def main():
     projects = [
         ("Noor Institute", "Education — production app on Google Play & App Store", "Noor Institute"),
         ("Fuse", "Influencer marketing — dual-role mobile platform", None),
-        ("Taleem (Student & Employees)", "Islamic education — REST API, Quran SQLite, GitHub Actions CI", None),
+        ("Taleem (Student & Employees)", "Islamic education — REST API, Quran SQLite, GitHub Actions CI — App Store", "Taleem"),
         ("Schupply", "School supplies e-commerce", "Schupply"),
         ("Zahran (Mobile & Desktop POS)", "E-commerce & POS — offline sync, PDF printing", None),
         ("Binge", "Food subscription — Firebase Analytics, Amazon Payment Services — Google Play &amp; App Store", "Binge"),

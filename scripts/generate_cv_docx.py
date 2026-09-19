@@ -24,6 +24,10 @@ PROJECT_LINKS = {
         ("Google Play", "https://play.google.com/store/apps/details?id=com.softera.noor_academy"),
         ("App Store", "https://apps.apple.com/eg/app/noor-institute/id6463731504"),
     ],
+    "Taleem": [
+        ("Student — App Store", "https://apps.apple.com/eg/app/taleem-student/id6809735602"),
+        ("Staff — App Store", "https://apps.apple.com/eg/app/taleem-staff/id6809736018"),
+    ],
     "Schupply": [
         ("Google Play", "https://play.google.com/store/apps/details?id=com.schupply.app"),
     ],
@@ -182,7 +186,7 @@ projects = [
     ("Taleem (Student & Employees)", "Islamic Education",
      "Student app (grades, absence, certificates, Quran mushaf) and staff app (halaqas, attendance, memorization, evaluations). GitHub Actions CI for APK builds.",
      "Flutter, BLoC, Dio, Hive, SQLite, Firebase Messaging, Fl Chart, Table Calendar",
-     []),
+     PROJECT_LINKS["Taleem"]),
     ("Schupply", "School Supplies E-Commerce",
      "School/grade package ordering with REST API, Hive caching, Google/Apple auth, deep links.",
      "Flutter, BLoC, Dio, Hive, GoRouter, Firebase Messaging",

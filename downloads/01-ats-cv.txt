@@ -31,7 +31,7 @@ KEY PROJECTS
 
 Noor Institute | Education | Flutter, BLoC, Dio, Retrofit, Floor, Stripe, Pusher, Firebase | Google Play, App Store
 Fuse | Influencer Marketing | Flutter, Cubit, Injectable, Freezed, Dio, Firebase, Storyly | Mobile App
-Taleem Student & Employees | Islamic Education | Flutter, BLoC, Dio, Hive, SQLite, Firebase, GitHub Actions CI | Mobile Apps
+Taleem Student & Employees | Islamic Education | Flutter, BLoC, Dio, Hive, SQLite, Firebase, GitHub Actions CI | App Store (Student & Staff)
 Schupply | School Supplies E-Commerce | Flutter, BLoC, Dio, Hive, GoRouter, Firebase | Google Play
 Zahran Mobile & Desktop POS | E-Commerce & POS | Flutter, BLoC, Dio, Hive, PDF, Window Manager | Mobile & Desktop
 Binge | Food Subscription | Flutter, BLoC, Dio, Firebase Analytics, Amazon Payment Services | Google Play, App Store
