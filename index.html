@@ -3,22 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>George Amany — Flutter Developer</title>
-  <meta name="description" content="Mid Flutter Developer specializing in Clean Architecture, mobile & desktop apps. Cairo, Egypt.">
+  <title>George Amany — Mid Flutter Developer | Cairo</title>
+  <meta name="description" content="Mid Flutter Developer in Cairo shipping production mobile and desktop apps — Clean Architecture, BLoC/Cubit, Firebase, payments, and CI/CD. Apps on Google Play and the App Store.">
   <meta name="author" content="George Amany">
-  <meta property="og:title" content="George Amany — Flutter Developer">
-  <meta property="og:description" content="Portfolio of George Amany — Flutter engineer shipping production mobile & desktop apps.">
-  <meta property="og:url" content="https://webpage-beta-nine.vercel.app/">
+  <meta name="keywords" content="Flutter Developer, Dart, Mid Flutter Developer, Cairo, Clean Architecture, BLoC, Mobile Apps, George Amany">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="google-site-verification" content="3cd4BeTm0mtZvOvYvqJ5wBh6fzQstGWzjPozOvvsJ1k">
   <link rel="canonical" href="https://webpage-beta-nine.vercel.app/">
-  <meta property="og:image" content="assets/george-portrait.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="George Amany">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="George Amany — Mid Flutter Developer">
+  <meta property="og:description" content="Production Flutter engineer shipping mobile and desktop apps across education, e-commerce, and food.">
+  <meta property="og:url" content="https://webpage-beta-nine.vercel.app/">
+  <meta property="og:image" content="https://webpage-beta-nine.vercel.app/assets/george-portrait.jpg">
+  <meta property="og:image:alt" content="Portrait of George Amany, Flutter Developer">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="George Amany — Mid Flutter Developer">
+  <meta name="twitter:description" content="Production Flutter engineer in Cairo — Clean Architecture, BLoC, Firebase, store releases.">
+  <meta name="twitter:image" content="https://webpage-beta-nine.vercel.app/assets/george-portrait.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%233d6b4f'/%3E%3Cstop offset='100%25' stop-color='%235c7a4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui' font-size='17' font-weight='800' fill='white'%3EG%3C/text%3E%3C/svg%3E">
   <meta name="theme-color" content="#0e1210">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "George Amany",
+    "url": "https://webpage-beta-nine.vercel.app/",
+    "image": "https://webpage-beta-nine.vercel.app/assets/george-portrait.jpg",
+    "jobTitle": "Mid Flutter Developer",
+    "worksFor": {"@type": "Organization", "name": "Neural Design Studios"},
+    "address": {"@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG"},
+    "email": "mailto:georgeamany5@gmail.com",
+    "sameAs": [
+      "https://github.com/GeorgeAmany",
+      "https://www.linkedin.com/in/george-amany-53b148219/"
+    ],
+    "knowsAbout": ["Flutter", "Dart", "Clean Architecture", "Firebase", "Mobile Development"]
+  }
+  </script>
   <style>
     /* ── TOKENS ── */
     :root {
@@ -52,8 +78,8 @@
       --R:            18px;
       --R-sm:         10px;
       --R-lg:         26px;
-      --display:      "General Sans", system-ui, sans-serif;
-      --body:         "Inter", system-ui, sans-serif;
+      --display:      "Montserrat", system-ui, sans-serif;
+      --body:         "Montserrat", system-ui, sans-serif;
       --nav-h:        68px;
       --ease:         cubic-bezier(.22,1,.36,1);
       --bounce:       cubic-bezier(.34,1.56,.64,1);
@@ -96,11 +122,14 @@
     /* ── RESET ── */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{
-      scroll-behavior:smooth;
       scroll-padding-top:calc(var(--nav-h) + 20px);
       scrollbar-width:thin;
       scrollbar-color:var(--p) transparent;
     }
+    html.lenis,html.lenis body{height:auto}
+    .lenis.lenis-smooth{scroll-behavior:auto!important}
+    .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+    .lenis.lenis-stopped{overflow:hidden}
     ::-webkit-scrollbar{width:4px}
     ::-webkit-scrollbar-thumb{background:var(--p);border-radius:4px}
     body{
@@ -222,43 +251,33 @@
 
     /* ── HERO ── */
     .hero{
+      position:relative;
       min-height:100svh;display:flex;flex-direction:column;
       justify-content:center;padding-top:var(--nav-h);
     }
     .hero-grid{
-      display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;
-      padding:56px 0 44px;
+      display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;
+      padding:72px 0 48px;
     }
-
-    .avail{
-      display:inline-flex;align-items:center;gap:8px;
-      font-size:12px;font-weight:500;color:var(--green);
-      padding:6px 14px;border-radius:999px;
-      background:var(--green-soft);border:1px solid rgba(74,124,89,.22);
-      margin-bottom:20px;width:fit-content;
-    }
-    .avail-dot{
-      width:7px;height:7px;border-radius:50%;background:var(--green);
-      animation:pulse-dot 2.2s ease-in-out infinite;
-    }
-    @keyframes pulse-dot{
-      0%,100%{box-shadow:0 0 0 0 rgba(74,124,89,.5)}
-      50%{box-shadow:0 0 0 6px rgba(74,124,89,0)}
-    }
-
+    .hero-copy{max-width:38rem}
     .hero-name{
-      font-size:clamp(3rem,6.5vw,5.4rem);font-weight:800;
-      letter-spacing:-.04em;line-height:.95;display:block;
-    }
-    .hero-name.accent{
-      background:linear-gradient(120deg,#6b9b78,#8fad7a,#c4a574,#6b9b78);
-      background-size:300% 100%;
-      -webkit-background-clip:text;background-clip:text;color:transparent;
-      animation:grad-flow 7s ease infinite;
+      font-size:clamp(3.2rem,7vw,5.8rem);font-weight:800;
+      letter-spacing:-.045em;line-height:.92;display:block;
     }
     .hero-role{
-      font-size:clamp(1rem,1.6vw,1.15rem);color:var(--muted);
-      margin:18px 0 22px;display:flex;align-items:center;gap:5px;flex-wrap:wrap;
+      margin-top:22px;font-size:clamp(1.05rem,2vw,1.25rem);font-weight:500;
+      color:var(--muted);letter-spacing:-.01em;
+    }
+    .hero-role #tw{color:var(--text);font-weight:600}
+    .hero-desc{
+      margin-top:20px;font-size:1.02rem;color:var(--muted);
+      max-width:40ch;line-height:1.75;
+    }
+    .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .hero-tags{display:none}
+    .hero-name.accent{
+      background:linear-gradient(120deg,#6b9b78 0%,#8fad7a 45%,#c4a574 100%);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
     }
     #tw{
       color:var(--text);font-weight:600;
@@ -266,15 +285,6 @@
       animation:cursor-blink .7s step-end infinite;
     }
     @keyframes cursor-blink{0%,100%{border-color:var(--p)}50%{border-color:transparent}}
-    .hero-desc{font-size:.975rem;color:var(--muted);max-width:50ch;line-height:1.78;margin-bottom:28px}
-    .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-    .hero-tags{display:flex;flex-wrap:wrap;gap:7px}
-    .htag{
-      font-size:12px;font-weight:500;padding:6px 11px;border-radius:999px;
-      border:1px solid var(--border);background:var(--surface);color:var(--dim);
-      transition:.2s;
-    }
-    .htag:hover{color:var(--text);border-color:var(--border2)}
 
     /* photo */
     .hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
@@ -293,17 +303,14 @@
       50%{transform:translate(-50%,-50%) scale(1.05);opacity:1}
     }
     .photo-ring{
-      position:absolute;inset:-3px;border-radius:32px;opacity:.55;
-      background:conic-gradient(from 0deg,#3d6b4f,#5c7a4a,#6b9b78,#8fad7a,#3d6b4f);
-      filter:blur(11px);
-      animation:ring-spin 14s linear infinite;
+      position:absolute;inset:-1px;border-radius:30px;opacity:.9;
+      background:linear-gradient(145deg,rgba(107,155,120,.55),rgba(196,165,116,.25),rgba(61,107,79,.4));
+      filter:blur(0);
     }
-    @keyframes ring-spin{to{transform:rotate(360deg)}}
     .photo-inner{
       position:relative;width:100%;height:100%;border-radius:28px;overflow:hidden;
-      border:3px solid var(--bg);
-      animation:float-y 6s ease-in-out infinite;
-      box-shadow:0 24px 60px rgba(0,0,0,.45);
+      border:2px solid var(--bg);
+      box-shadow:0 28px 64px rgba(0,0,0,.5);
     }
     .photo-inner::after{
       content:"";position:absolute;inset:0;
@@ -314,25 +321,10 @@
     .photo-inner img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
     @keyframes float-y{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 
-    .geo{position:absolute;border-radius:50%;animation:float-y 5s ease-in-out infinite}
-    .geo-a{width:56px;height:56px;border-radius:14px;background:var(--grad);top:-14px;right:-14px;animation-delay:-2s;opacity:.9;box-shadow:0 8px 24px var(--accent-glow)}
-    .geo-b{width:42px;height:42px;border:2px solid var(--cyan);background:var(--cyan-soft);bottom:22px;left:-20px;animation-delay:-3.5s}
-    .geo-c{width:26px;height:26px;border:2px solid var(--green);background:var(--green-soft);top:38%;right:-26px;animation-delay:-1s}
-
-    .float-stat{
-      position:absolute;padding:10px 14px;border-radius:14px;
-      background:color-mix(in srgb,var(--bg) 72%,transparent);
-      backdrop-filter:blur(18px);border:1px solid var(--border2);
-      box-shadow:var(--shadow);animation:float-y 5s ease-in-out infinite;
-    }
-    .float-stat .n{font-family:var(--display);font-size:1.1rem;font-weight:700}
-    .float-stat .l{font-size:11px;color:var(--muted);white-space:nowrap}
-    .fs-1{top:4%;left:-16%;animation-delay:-.8s}
-    .fs-2{bottom:6%;right:-14%;animation-delay:-2.8s}
-
     /* stats row */
     .stats-row{
-      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding-bottom:44px;
+      display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+      padding:48px 0 8px;
     }
     .stat-box{
       padding:22px 20px;border-radius:var(--R);border:1px solid var(--border);
@@ -467,23 +459,66 @@
     }
 
     /* ── SKILLS ── */
-    .skills-wrap{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+    .skills-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    @media(max-width:900px){.skills-wrap{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.skills-wrap{grid-template-columns:1fr}}
     .skill-card{
-      padding:20px;border-radius:var(--R);border:1px solid var(--border);background:var(--surface);
-      transition:.25s var(--ease);
+      position:relative;padding:32px 30px 30px;border-radius:22px;
+      border:1px solid var(--border);background:linear-gradient(165deg,var(--surface2),var(--surface));
+      min-height:248px;display:flex;flex-direction:column;gap:20px;overflow:hidden;
+      transition:transform .4s var(--ease),border-color .35s,box-shadow .35s;
     }
-    .skill-card:hover{border-color:var(--border2);background:var(--surface2);transform:translateY(-7px);box-shadow:var(--shadow)}
+    .skill-card::before{
+      content:"";position:absolute;inset:0;
+      background:radial-gradient(120% 80% at 100% 0%,rgba(107,155,120,.1),transparent 55%);
+      opacity:0;transition:opacity .35s;pointer-events:none;
+    }
+    .skill-card::after{
+      content:attr(data-index);position:absolute;right:18px;top:8px;
+      font-family:var(--display);font-size:4.5rem;font-weight:800;letter-spacing:-.06em;
+      line-height:1;color:var(--text);opacity:.04;pointer-events:none;
+    }
+    .skill-card:hover{
+      border-color:var(--border2);
+      transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,0,0,.35);
+    }
+    .skill-card:hover::before{opacity:1}
+    .skill-top{display:flex;align-items:center;justify-content:space-between;gap:12px;position:relative;z-index:1}
+    .skill-ico{
+      width:52px;height:52px;border-radius:16px;display:grid;place-items:center;
+      background:var(--p-soft);border:1px solid rgba(107,155,120,.28);color:var(--p-light);
+      flex-shrink:0;
+    }
+    .skill-ico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .skill-index{
+      font-family:var(--display);font-size:.72rem;font-weight:700;letter-spacing:.14em;
+      color:var(--p-light);text-transform:uppercase;
+    }
     .skill-label{
-      font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
-      color:var(--dim);margin-bottom:14px;font-family:var(--body);
+      font-size:1.22rem;font-weight:700;letter-spacing:-.03em;
+      color:var(--text);margin:0;font-family:var(--display);line-height:1.15;
+      position:relative;z-index:1;
     }
-    .chips{display:flex;flex-wrap:wrap;gap:7px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;position:relative;z-index:1}
     .chip{
-      font-size:12px;font-weight:500;padding:5px 10px;border-radius:999px;
-      border:1px solid var(--border);color:var(--muted);background:var(--surface);
-      transition:.2s;cursor:default;
+      font-size:12.5px;font-weight:500;padding:8px 13px;border-radius:999px;
+      border:1px solid var(--border);color:var(--muted);
+      background:rgba(255,255,255,.03);transition:.2s;cursor:default;
     }
-    .chip:hover{color:var(--p-light);border-color:var(--p);background:var(--p-soft);transform:translateY(-2px);box-shadow:0 4px 14px rgba(74,124,89,.22)}
+    .chip:hover{color:var(--text);border-color:var(--border2);background:var(--p-soft);transform:translateY(-1px)}
+
+    /* shared icon style */
+    .ico{
+      display:inline-flex;align-items:center;justify-content:center;
+      color:var(--p-light);
+    }
+    .ico svg{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .proj-icon.ico{font-size:22px;width:42px;height:42px;border-radius:12px;background:var(--p-soft);border:1px solid var(--border)}
+    .proj-icon.ico svg{width:20px;height:20px}
+    .jrn-icon.ico{font-size:28px;width:52px;height:52px;border-radius:16px;background:var(--p-soft);border:1px solid var(--border);margin:0 auto 14px}
+    .jrn-icon.ico svg{width:24px;height:24px}
+    .face.front .proj-icon.ico{font-size:48px;width:64px;height:64px;border-radius:18px;margin-bottom:14px}
+    .face.front .proj-icon.ico svg{width:28px;height:28px}
 
     /* ── PROJECTS ── */
     .proj-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
@@ -554,7 +589,7 @@
         margin-top:16px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
         color:var(--p-light);display:inline-flex;align-items:center;gap:6px;opacity:.9;
       }
-      .flip-hint::after{content:"⟳";font-size:13px;animation:hint-spin 4s linear infinite}
+      .flip-hint svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;animation:hint-spin 4s linear infinite}
       @keyframes hint-spin{to{transform:rotate(360deg)}}
       .face.back{transform:rotateY(180deg)}
       .back-body{padding:18px;display:flex;flex-direction:column;gap:9px;height:100%}
@@ -615,15 +650,15 @@
 
     /* ── ANIMATED GLOW BORDER ── */
     @property --bd-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
-    .stat-box,.skill-card,.edu-card,.info-row{position:relative}
-    .stat-box::before,.skill-card::before,.edu-card::before{
+    .stat-box,.edu-card,.info-row{position:relative}
+    .stat-box::before,.edu-card::before{
       content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
       background:conic-gradient(from var(--bd-angle),transparent 0%,var(--p) 18%,var(--purple) 32%,transparent 50%,transparent 100%);
       -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
       -webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;
       opacity:0;transition:opacity .4s;pointer-events:none;
     }
-    .stat-box:hover::before,.skill-card:hover::before,.edu-card:hover::before{
+    .stat-box:hover::before,.edu-card:hover::before{
       opacity:1;animation:bd-rot 2.8s linear infinite;
     }
     @keyframes bd-rot{to{--bd-angle:360deg}}
@@ -689,16 +724,16 @@
     .name-line{display:block;overflow:hidden;padding-bottom:.05em}
     @media(prefers-reduced-motion:no-preference){
       .name-line .hero-name{transform:translateY(118%);animation:name-up .95s var(--ease) .15s forwards}
-      .name-line .hero-name.accent{animation:name-up .95s var(--ease) .3s forwards,grad-flow 7s ease infinite}
+      .name-line .hero-name.accent{animation:name-up .95s var(--ease) .3s forwards}
       .skill-card .chip{opacity:0;transform:translateY(10px)}
       .skill-card.in .chip{animation:chip-in .5s var(--ease) forwards}
-      .skill-card.in .chip:nth-child(1){animation-delay:.05s}
-      .skill-card.in .chip:nth-child(2){animation-delay:.10s}
-      .skill-card.in .chip:nth-child(3){animation-delay:.15s}
-      .skill-card.in .chip:nth-child(4){animation-delay:.20s}
-      .skill-card.in .chip:nth-child(5){animation-delay:.25s}
-      .skill-card.in .chip:nth-child(6){animation-delay:.30s}
-      .skill-card.in .chip:nth-child(7){animation-delay:.35s}
+      .skill-card.in .chips .chip:nth-child(1){animation-delay:.05s}
+      .skill-card.in .chips .chip:nth-child(2){animation-delay:.10s}
+      .skill-card.in .chips .chip:nth-child(3){animation-delay:.15s}
+      .skill-card.in .chips .chip:nth-child(4){animation-delay:.20s}
+      .skill-card.in .chips .chip:nth-child(5){animation-delay:.25s}
+      .skill-card.in .chips .chip:nth-child(6){animation-delay:.30s}
+      .skill-card.in .chips .chip:nth-child(7){animation-delay:.35s}
     }
     @keyframes name-up{to{transform:translateY(0)}}
     @keyframes chip-in{to{opacity:1;transform:none}}
@@ -866,8 +901,7 @@
     <div class="container">
       <div class="hero-grid">
 
-        <div class="reveal">
-          <div class="avail"><div class="avail-dot"></div>Available for work</div>
+        <div class="reveal hero-copy">
           <h1>
             <span class="name-line"><span class="hero-name">George</span></span>
             <span class="name-line"><span class="hero-name accent">Amany.</span></span>
@@ -878,15 +912,8 @@
           <p class="hero-desc">Mobile &amp; desktop Flutter engineer shipping real products — Clean Architecture, BLoC/Cubit, REST APIs, Firebase, and payments — across education, e-commerce and influencer marketing.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#projects" data-mag>View my work</a>
-            <a class="btn" href="https://github.com/GeorgeAmany" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a class="btn" href="https://www.linkedin.com/in/george-amany-53b148219/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          </div>
-          <div class="hero-tags">
-            <span class="htag">Flutter</span><span class="htag">Dart</span>
-            <span class="htag">Clean Architecture</span><span class="htag">BLoC / Cubit</span>
-            <span class="htag">Dio / Retrofit</span><span class="htag">Firebase</span>
-            <span class="htag">Stripe</span><span class="htag">Desktop Flutter</span>
-            <span class="htag">GitHub Actions</span><span class="htag">pub.dev</span>
+            <a class="btn" href="https://github.com/GeorgeAmany" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/george-amany-53b148219/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
 
@@ -896,25 +923,9 @@
             <div class="photo-inner">
               <img src="assets/george-portrait.jpg" alt="George Amany — Flutter Developer" width="320" height="400">
             </div>
-            <div class="geo geo-a"></div>
-            <div class="geo geo-b"></div>
-            <div class="geo geo-c"></div>
-          </div>
-          <div class="float-stat fs-1">
-            <div class="n">10+</div><div class="l">Production apps</div>
-          </div>
-          <div class="float-stat fs-2">
-            <div class="n">2</div><div class="l">pub.dev packages</div>
           </div>
         </div>
 
-      </div>
-
-      <div class="stats-row reveal d3">
-        <div class="stat-box"><div class="n" data-to="960" data-sfx="+">0</div><div class="l">Commits on flagship projects</div></div>
-        <div class="stat-box"><div class="n" data-to="10" data-sfx="+">0</div><div class="l">Apps shipped to production</div></div>
-        <div class="stat-box"><div class="n">2</div><div class="l">Open-source pub.dev packages</div></div>
-        <div class="stat-box"><div class="n">2+</div><div class="l">Years at Neural Design Studios</div></div>
       </div>
     </div>
     <a class="scroll-cue" href="#about" aria-label="Scroll down"><div class="mouse"></div>Scroll</a>
@@ -939,6 +950,15 @@
       <span class="tick-item">SQLite</span><span class="tick-item">GoRouter</span>
       <span class="tick-item">Stripe</span><span class="tick-item">GitHub Actions</span>
       <span class="tick-item">Flutter Desktop</span><span class="tick-item">GetIt</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats-row reveal">
+      <div class="stat-box"><div class="n" data-to="960" data-sfx="+">0</div><div class="l">Commits on flagship projects</div></div>
+      <div class="stat-box"><div class="n" data-to="10" data-sfx="+">0</div><div class="l">Apps shipped to production</div></div>
+      <div class="stat-box"><div class="n">2</div><div class="l">Open-source pub.dev packages</div></div>
+      <div class="stat-box"><div class="n">2+</div><div class="l">Years at Neural Design Studios</div></div>
     </div>
   </div>
 
@@ -1020,7 +1040,7 @@
         <div class="jrn-step reveal">
           <div class="jrn-num">01</div>
           <div class="jrn-card">
-            <div class="jrn-icon">🌱</div>
+            <div class="jrn-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22c4-4 6-7.2 6-10a6 6 0 1 0-12 0c0 2.8 2 6 6 10z"/><circle cx="12" cy="12" r="2.5"/></svg></div>
             <h3 class="jrn-title">Started &amp; invested in myself</h3>
             <p>Joined Neural Design Studios as a part-time developer in early 2024 and took ownership of growing fast — Clean Architecture, BLoC/Cubit, and production workflows — through deliberate practice and self-study.</p>
           </div>
@@ -1028,7 +1048,7 @@
         <div class="jrn-step reveal d1">
           <div class="jrn-num">02</div>
           <div class="jrn-card">
-            <div class="jrn-icon">🚀</div>
+            <div class="jrn-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
             <h3 class="jrn-title">Grew under strong mentorship</h3>
             <p>Guided by senior engineers, I moved to full-time and started owning features end-to-end — shipping 10+ production apps, two open-source packages, and CI/CD pipelines with real independence and confidence.</p>
           </div>
@@ -1036,7 +1056,7 @@
         <div class="jrn-step reveal d2">
           <div class="jrn-num">03</div>
           <div class="jrn-card">
-            <div class="jrn-icon">🤝</div>
+            <div class="jrn-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
             <h3 class="jrn-title">Now mentoring others</h3>
             <p>Today I mentor interns and junior developers at the company — sharing Flutter best practices, Clean Architecture, and code-quality standards, and helping them ship their first real features.</p>
           </div>
@@ -1054,7 +1074,11 @@
         <p class="sec-sub">Technologies I work with daily in production environments.</p>
       </div>
       <div class="skills-wrap">
-        <div class="skill-card reveal">
+        <div class="skill-card reveal" data-index="01">
+          <div class="skill-top">
+            <div class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+            <span class="skill-index">01</span>
+          </div>
           <div class="skill-label">Core Flutter</div>
           <div class="chips">
             <span class="chip">Flutter</span><span class="chip">Dart</span>
@@ -1062,38 +1086,58 @@
             <span class="chip">Cubit</span><span class="chip">GetIt</span><span class="chip">GoRouter</span>
           </div>
         </div>
-        <div class="skill-card reveal d1">
+        <div class="skill-card reveal d1" data-index="02">
+          <div class="skill-top">
+            <div class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M4 6h10"/><path d="M4 18h10"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/></svg></div>
+            <span class="skill-index">02</span>
+          </div>
           <div class="skill-label">Networking</div>
           <div class="chips">
             <span class="chip">Dio</span><span class="chip">Retrofit</span>
             <span class="chip">REST APIs</span><span class="chip">Pusher</span><span class="chip">Postman</span>
           </div>
         </div>
-        <div class="skill-card reveal d2">
-          <div class="skill-label">Backend & Storage</div>
+        <div class="skill-card reveal d2" data-index="03">
+          <div class="skill-top">
+            <div class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <span class="skill-index">03</span>
+          </div>
+          <div class="skill-label">Backend &amp; Storage</div>
           <div class="chips">
             <span class="chip">Firebase Auth</span><span class="chip">Firestore</span>
             <span class="chip">FCM</span><span class="chip">Crashlytics</span>
             <span class="chip">Hive</span><span class="chip">Floor</span><span class="chip">SQLite</span>
           </div>
         </div>
-        <div class="skill-card reveal d3">
-          <div class="skill-label">Payments & Maps</div>
+        <div class="skill-card reveal d3" data-index="04">
+          <div class="skill-top">
+            <div class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+            <span class="skill-index">04</span>
+          </div>
+          <div class="skill-label">Payments &amp; Maps</div>
           <div class="chips">
             <span class="chip">Stripe</span><span class="chip">Amazon Pay</span>
             <span class="chip">Google Maps</span>
             <span class="chip">Google Sign-In</span><span class="chip">Apple Sign-In</span>
           </div>
         </div>
-        <div class="skill-card reveal">
-          <div class="skill-label">Desktop & DevOps</div>
+        <div class="skill-card reveal" data-index="05">
+          <div class="skill-top">
+            <div class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8"/><path d="M12 18v4"/></svg></div>
+            <span class="skill-index">05</span>
+          </div>
+          <div class="skill-label">Desktop &amp; DevOps</div>
           <div class="chips">
             <span class="chip">Flutter Desktop</span><span class="chip">Window Manager</span>
             <span class="chip">PDF</span><span class="chip">Git</span>
             <span class="chip">GitHub Actions</span><span class="chip">CI/CD</span>
           </div>
         </div>
-        <div class="skill-card reveal d1">
+        <div class="skill-card reveal d1" data-index="06">
+          <div class="skill-top">
+            <div class="skill-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5"/><path d="M12 12v9"/><path d="M12 12L4 7.5"/></svg></div>
+            <span class="skill-index">06</span>
+          </div>
           <div class="skill-label">Code Quality</div>
           <div class="chips">
             <span class="chip">Freezed</span><span class="chip">Dartz</span>
@@ -1128,7 +1172,7 @@
         <article class="proj-card reveal" data-cat="edu" style="--c:linear-gradient(90deg,#3d6b4f,#5c7a4a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Education</div><div class="proj-name">Noor Institute</div></div><div class="proj-icon">🎓</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Education</div><div class="proj-name">Noor Institute</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></div></div>
             <p class="proj-desc">Production app (v3.7.0) for courses, homework, schedules, invoices, and real-time chat. Stripe + Pusher.</p>
             <div class="proj-tech">Flutter · BLoC · Retrofit · Floor · Stripe · Pusher · Firebase · Freezed</div>
             <div class="proj-links">
@@ -1141,7 +1185,7 @@
         <article class="proj-card reveal d1" data-cat="edu" style="--c:linear-gradient(90deg,#5c7a4a,#6b8f5a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Influencer Marketing</div><div class="proj-name">Fuse</div></div><div class="proj-icon">⚡</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Influencer Marketing</div><div class="proj-name">Fuse</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg></div></div>
             <p class="proj-desc">Dual-app platform for agencies and influencers with profiles, content, service requests, and Storyly stories.</p>
             <div class="proj-tech">Flutter · Cubit · Injectable · Freezed · Dio · Firebase · Storyly · GoRouter</div>
           </div>
@@ -1150,7 +1194,7 @@
         <article class="proj-card reveal d2" data-cat="edu" style="--c:linear-gradient(90deg,#4a6741,#3d6b4f)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Islamic Education</div><div class="proj-name">Taleem</div></div><div class="proj-icon">📖</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Islamic Education</div><div class="proj-name">Taleem</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div></div>
             <p class="proj-desc">Student & employee apps with Quran mushaf, attendance, memorization. GitHub Actions CI pipeline.</p>
             <div class="proj-tech">Flutter · BLoC · Dio · Hive · SQLite · Firebase · GitHub Actions</div>
             <div class="proj-links">
@@ -1163,7 +1207,7 @@
         <article class="proj-card reveal" data-cat="ecom" style="--c:linear-gradient(90deg,#6b8f5a,#3d6b4f)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">E-Commerce</div><div class="proj-name">Schupply</div></div><div class="proj-icon">🛍️</div></div>
+            <div class="proj-head"><div><div class="proj-domain">E-Commerce</div><div class="proj-name">Schupply</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div></div>
             <p class="proj-desc">School supplies ordering with REST API, Google/Apple Sign-In, and deep linking.</p>
             <div class="proj-tech">Flutter · BLoC · Dio · Hive · GoRouter · Firebase</div>
             <div class="proj-links"><a class="p-link" href="https://play.google.com/store/apps/details?id=com.schupply.app" target="_blank" rel="noreferrer">Google Play</a></div>
@@ -1173,7 +1217,7 @@
         <article class="proj-card reveal d1" data-cat="ecom desk" style="--c:linear-gradient(90deg,#b8a078,#5c7a4a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">E-Commerce & POS</div><div class="proj-name">Zahran</div></div><div class="proj-icon">🏪</div></div>
+            <div class="proj-head"><div><div class="proj-domain">E-Commerce & POS</div><div class="proj-name">Zahran</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg></div></div>
             <p class="proj-desc">Mobile shopping app + desktop POS with offline invoice sync and PDF export.</p>
             <div class="proj-tech">Flutter · BLoC · Dio · Hive · Window Manager · PDF · Printing</div>
           </div>
@@ -1182,7 +1226,7 @@
         <article class="proj-card reveal d2" data-cat="food" style="--c:linear-gradient(90deg,#3d6b4f,#2f5d3a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Food Subscription</div><div class="proj-name">Binge</div></div><div class="proj-icon">🍽️</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Food Subscription</div><div class="proj-name">Binge</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></div></div>
             <p class="proj-desc">Meals, subscriptions, wallet, loyalty program. Firebase Analytics + Amazon Payment Services.</p>
             <div class="proj-tech">Flutter · BLoC · Dio · Firebase Crashlytics · Amazon Pay · Clarity</div>
             <div class="proj-links">
@@ -1195,7 +1239,7 @@
         <article class="proj-card reveal" data-cat="food" style="--c:linear-gradient(90deg,#2f5d3a,#4a6741)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Food Brand</div><div class="proj-name">Al Wefaq Foods</div></div><div class="proj-icon">🥗</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Food Brand</div><div class="proj-name">Al Wefaq Foods</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 21h10"/><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M11.38 12a2.4 2.4 0 0 1-.4-4.77 2.4 2.4 0 0 1 3.2-2.77 2.4 2.4 0 0 1 3.47-.63 2.4 2.4 0 0 1 3.37 3.37 2.4 2.4 0 0 1-1.1 3.7 2.51 2.51 0 0 1 .03 1.1"/></svg></div></div>
             <p class="proj-desc">WebView app with Firebase push and OneSignal in-app messaging.</p>
             <div class="proj-tech">Flutter · InAppWebView · MobX · Firebase · OneSignal</div>
             <div class="proj-links"><a class="p-link" href="https://play.google.com/store/apps/details?id=com.alwefaqfoods.app" target="_blank" rel="noreferrer">Google Play</a></div>
@@ -1205,7 +1249,7 @@
         <article class="proj-card reveal d1" data-cat="desk" style="--c:linear-gradient(90deg,#c4a574,#8fad7a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Desktop</div><div class="proj-name">Proposal Desktop</div></div><div class="proj-icon">📄</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Desktop</div><div class="proj-name">Proposal Desktop</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></div></div>
             <p class="proj-desc">PDF proposal builder with editor, service packages, and payment sections.</p>
             <div class="proj-tech">Flutter Desktop · BLoC · PDF · Printing · Window Manager</div>
           </div>
@@ -1214,7 +1258,7 @@
         <article class="proj-card reveal d2" data-cat="ecom" style="--c:linear-gradient(90deg,#4a7c59,#5c7a4a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">On-Demand Services</div><div class="proj-name">Horse Time</div></div><div class="proj-icon">🐴</div></div>
+            <div class="proj-head"><div><div class="proj-domain">On-Demand Services</div><div class="proj-name">Horse Time</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/></svg></div></div>
             <p class="proj-desc">Service booking with chat, multi-gateway payments, maps, and Firebase.</p>
             <div class="proj-tech">Flutter · MobX · Firebase · Google Maps · Stripe / Razorpay / PayPal</div>
             <div class="proj-links">
@@ -1227,7 +1271,7 @@
         <article class="proj-card reveal" data-cat="ecom" style="--c:linear-gradient(90deg,#5c7a4a,#8fad7a)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Industrial</div><div class="proj-name">Al Rassi</div></div><div class="proj-icon">🏭</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Industrial</div><div class="proj-name">Al Rassi</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/></svg></div></div>
             <p class="proj-desc">Published production mobile application.</p>
             <div class="proj-tech">Flutter</div>
             <div class="proj-links">
@@ -1240,7 +1284,7 @@
         <article class="proj-card reveal d1" data-cat="oss" style="--c:linear-gradient(90deg,#6b9b78,#4a7c59)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Open Source · pub.dev</div><div class="proj-name">animated_contact_us</div></div><div class="proj-icon">📦</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Open Source · pub.dev</div><div class="proj-name">animated_contact_us</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div></div>
             <p class="proj-desc">Animated contact/social link UI widget for Flutter. v0.0.8</p>
             <div class="proj-tech">Flutter · Font Awesome · URL Launcher</div>
             <div class="proj-links">
@@ -1253,7 +1297,7 @@
         <article class="proj-card reveal d2" data-cat="oss" style="--c:linear-gradient(90deg,#8fad7a,#c4a574)">
           <div class="proj-stripe"></div>
           <div class="proj-body">
-            <div class="proj-head"><div><div class="proj-domain">Open Source · pub.dev</div><div class="proj-name">liquid_wave_indicator</div></div><div class="proj-icon">🌊</div></div>
+            <div class="proj-head"><div><div class="proj-domain">Open Source · pub.dev</div><div class="proj-name">liquid_wave_indicator</div></div><div class="proj-icon ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg></div></div>
             <p class="proj-desc">Animated liquid wave progress indicator widget. v0.2.2</p>
             <div class="proj-tech">Flutter · Pure Dart</div>
             <div class="proj-links">
@@ -1360,7 +1404,10 @@
     toTop.classList.toggle('show', window.scrollY > innerHeight * 0.6);
   }
   window.addEventListener('scroll', updateProg, { passive: true });
-  toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+  toTop.addEventListener('click', () => {
+    if (window.__lenis) window.__lenis.scrollTo(0);
+    else scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   /* ── NAV SCROLL / ACTIVE ── */
   const navEl = document.getElementById('nav');
@@ -1484,7 +1531,8 @@
       const fn = document.createElement('div'); fn.className = 'proj-name';
       fn.textContent = nameTxt; front.appendChild(fn);
       const hint = document.createElement('div'); hint.className = 'flip-hint';
-      hint.textContent = 'Details'; front.appendChild(hint);
+      hint.innerHTML = 'Details <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.2-8.6"/><path d="M21 3v6h-6"/></svg>';
+      front.appendChild(hint);
 
       const back = document.createElement('div'); back.className = 'face back';
       const stripe2 = document.createElement('div'); stripe2.className = 'proj-stripe';
@@ -1556,12 +1604,10 @@
   if (fine) {
     const glows = document.querySelectorAll('.bg-glow');
     const dgrid = document.querySelector('.dot-grid');
-    const geos = document.querySelectorAll('.geo');
     addEventListener('pointermove', e => {
       const dx = (e.clientX / innerWidth - .5), dy = (e.clientY / innerHeight - .5);
       glows.forEach((g, i) => { const f = (i + 1) * 22; g.style.translate = `${dx * f}px ${dy * f}px`; });
       if (dgrid) dgrid.style.translate = `${dx * -10}px ${dy * -10}px`;
-      geos.forEach((g, i) => { const f = (i + 1) * 16; g.style.translate = `${dx * f}px ${dy * f}px`; });
     }, { passive: true });
   }
 
@@ -1659,12 +1705,10 @@
   /* ── HERO SCROLL PARALLAX ── */
   if (!matchMedia('(prefers-reduced-motion:reduce)').matches) {
     const hv = document.querySelector('.hero-visual');
-    const tags = document.querySelector('.hero-tags');
     addEventListener('scroll', () => {
       const y = scrollY;
       if (y > innerHeight) return;
-      if (hv) hv.style.translate = `0 ${y * 0.14}px`;
-      if (tags) tags.style.translate = `0 ${y * 0.05}px`;
+      if (hv) hv.style.translate = `0 ${y * 0.12}px`;
     }, { passive: true });
   }
 
@@ -1740,6 +1784,37 @@
       }
     });
   }
+
+  /* ── LENIS SMOOTH SCROLL ── */
+  (function initLenis() {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js';
+    s.onload = () => {
+      const lenis = new Lenis({
+        duration: 1.15,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const id = a.getAttribute('href');
+          if (!id || id === '#') return;
+          const el = document.querySelector(id);
+          if (!el) return;
+          e.preventDefault();
+          lenis.scrollTo(el, { offset: -80 });
+        });
+      });
+      window.__lenis = lenis;
+    };
+    document.head.appendChild(s);
+  })();
 </script>
 </body>
 </html>
